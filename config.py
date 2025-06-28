@@ -1,7 +1,7 @@
 import os
 
-API_ID = os.getenv("21490331")
-API_HASH = os.getenv("c9599a5aa61ee8ca4f5e778d20c61f24")
+API_ID = os.getenv("29245477")
+API_HASH = os.getenv("0abc83883262245c90ca337b7a0375c4")
 BOT_TOKEN = os.getenv("")
 URL_A = os.getenv("URL_A")
 URL_B = os.getenv("URL_B")
