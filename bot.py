@@ -9,6 +9,16 @@ from config import API_ID, API_HASH, BOT_TOKEN, URL_A, START_PIC, MONGO_URI, ADM
 from webhook import start_webhook
 from modules.rss.rss import news_feed_loop
 
+class Bot(Client):
+    def __init__(self):
+        super().__init__(
+            name="Bot",
+            api_hash=API_HASH,
+            api_id=APP_ID,
+            bot_token=TG_BOT_TOKEN
+        )
+        self.LOGGER = LOGGER
+
 mongo_client = pymongo.MongoClient(MONGO_URI)
 db = mongo_client["AnimeNewsBot"]
 user_settings_collection = db["user_settings"]
@@ -75,11 +85,3 @@ async def main():
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
-
-
-app = Client(
-    "my_bot",
-    api_id=int(os.environ["API_ID"]),
-    api_hash=os.environ["API_HASH"],
-    bot_token=os.environ["BOT_TOKEN"]
-)
