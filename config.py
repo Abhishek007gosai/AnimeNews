@@ -2,7 +2,7 @@ import os
 
 API_HASH = os.getenv("29245477")
 API_HASH = os.environ("0abc83883262245c90ca337b7a0375c4")
-BOT_TOKEN = os.environ("7831174760:AAFKWWGJA2McsmSlrZUnYvXfy_BIvMsPf70")
+BOT_TOKEN = os.environ("")
 URL_A = os.getenv("")
 URL_B = os.getenv("Anime_News_Arena")
 URL_C = os.getenv("URL_C")
