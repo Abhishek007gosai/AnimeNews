@@ -1,11 +1,11 @@
 import os
 
-APP_ID = int(os.environ.get("APP_ID", "29245477"))
-API_HASH = os.environ.get("API_HASH", "0abc83883262245c90ca337b7a0375c4")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+API_HASH = os.getenv("API_HASH")
+API_HASH = os.environ("API_HASH")
+BOT_TOKEN = os.environ("BOT_TOKEN")
 URL_A = os.getenv("URL_A")
 URL_B = os.getenv("URL_B")
 URL_C = os.getenv("URL_C")
 START_PIC = os.getenv("https://litter.catbox.moe/m4c4wu.jpg")
-MONGO_URI = os.getenv("mongodb+srv://BladexRobot:az50i6VCbZnez34y@cluster0.8uydmmp.mongodb.net/")
+MONGO_URI = os.getenv("")
 ADMINS = list(map(int, os.getenv("ADMINS", "7654385403").split()))
