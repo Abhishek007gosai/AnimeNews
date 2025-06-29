@@ -1,8 +1,8 @@
 import os
 
-API_ID = os.getenv("29245477")
-API_HASH = os.getenv("0abc83883262245c90ca337b7a0375c4")
-BOT_TOKEN = os.getenv("")
+APP_ID = int(os.environ.get("APP_ID", "29245477"))
+API_HASH = os.environ.get("API_HASH", "0abc83883262245c90ca337b7a0375c4")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 URL_A = os.getenv("URL_A")
 URL_B = os.getenv("URL_B")
 URL_C = os.getenv("URL_C")
