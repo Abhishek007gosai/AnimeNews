@@ -1,6 +1,4 @@
-import asyncio
 import os
-import logging
 
 APP_ID = int(os.environ.get("APP_ID", "29245477"))
 API_HASH = os.environ.get("API_HASH", "0abc83883262245c90ca337b7a0375c4")
